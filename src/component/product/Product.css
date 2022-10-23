@@ -1,0 +1,25 @@
+.product-name{
+    color: blue;
+    font-weight: 600;
+}
+.product{
+    display: flex;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+}
+.photo img{
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    margin: 5px;
+}
+.button{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(222, 79, 182);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
