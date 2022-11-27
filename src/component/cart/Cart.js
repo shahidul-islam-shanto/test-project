@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+//import Review from '../review/Review';
 import './Cart.css';
 
 const Cart = (props) => {
@@ -18,20 +20,22 @@ const Cart = (props) => {
     shopping = 12.99;
   }
     const tax = total / 15;
-    const grendTotal = total + tax + shopping;
+    const grandTotal = total + tax + shopping;
 
-    const formetNumber = num => {
-        const formet = num.toFixed(2);
-        return Number (formet);
-    }
+    const formatNumber = num => {
+        const format = num.toFixed(2); 
+        return Number (format);
+    } 
     return (
         <div>
-            <h2>Order Sammary</h2>
+            <h2>Order Summary</h2>
             <p>Input Order: ${cart.length}</p>
-            <p>Price: ${formetNumber(total)}</p>
-            <p><small>Tax + VAT: ${formetNumber(tax)}</small></p>
+            <p>Price: ${formatNumber(total)}</p>
+            <p><small>Tax + VAT: ${formatNumber(tax)}</small></p>
             <p><small>Shopping: ${shopping}</small></p>
-            <h5>Grend Total: ${formetNumber(grendTotal)}</h5>
+            <h4>Grand Total: ${formatNumber(grandTotal)}</h4>
+           <Link to="/review"> <button className='button'>Review Order</button></Link>
+           
         </div>
     );
 };

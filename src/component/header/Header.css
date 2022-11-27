@@ -7,10 +7,10 @@ img{
 .header-area nav{
     height: 40px;
     background-color: blue;
-    text-align: left;
+    text-align: center;
     line-height: 40px;
 }
-nav a{
+ nav a{
     text-decoration: none;
     color: white;
     font-size: 20px;
